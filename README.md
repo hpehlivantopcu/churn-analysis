@@ -6,7 +6,7 @@ During my US Cellular internship, I kept seeing us throw discounts at customers 
 
 I can't share real customer data (obviously), but this analysis recreates the patterns I saw in 2M+ customer records. The code simulates what would happen if we ran a targeted 15% discount campaign for high-risk customers.
 
-**The punchline:** Depends on your retention uplift. If 40% of at-risk customers actually stay because of the discount, you come out ahead. If it's lower, you're better off letting them walk.
+** Depends on your retention uplift. If 40% of at-risk customers actually stay because of the discount, you come out ahead. If it's lower, you're better off letting them walk.
 
 ---
 
@@ -17,7 +17,7 @@ I can't share real customer data (obviously), but this analysis recreates the pa
 3. **Simulates a discount campaign** targeting high-risk customers
 4. **Calculates the ROI** — revenue saved vs discount cost
 
-You get two charts + a CSV with the full breakdown.
+two charts + a CSV with the full breakdown.
 
 ---
 
