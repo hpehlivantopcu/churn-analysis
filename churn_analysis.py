@@ -23,7 +23,7 @@ pip install pandas numpy matplotlib seaborn scikit-learn
 =============================================================
 """
 
-# ─── 1. IMPORTS & SYNTHETIC DATA LOADER ─────────────────────
+# ─── 1. IMPORTS & SYNTHETIC DATA  ─────────────────────
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -46,8 +46,6 @@ np.random.seed(42)
 def generate_telecom_data(n: int = 5000) -> pd.DataFrame:
     """
     Generates a realistic synthetic telecom-churn dataset.
-    Replace this with pd.read_csv("your_real_data.csv") when you
-    have actual customer records.
     """
     tenure        = np.random.exponential(scale=30, size=n).astype(int).clip(0, 72)
     monthly_chgs  = np.round(np.random.normal(65, 25, n), 2).clip(20, 150)
@@ -63,7 +61,7 @@ def generate_telecom_data(n: int = 5000) -> pd.DataFrame:
     dependents    = np.random.choice([0, 1], n, p=[0.70, 0.30])
     calls_support = np.random.poisson(lam=1.8, size=n)
 
-    # Churn probability driven by realistic features
+    # Churn probability
     churn_prob = (
         0.30
         - 0.004 * tenure
@@ -127,7 +125,7 @@ axes[0, 1].legend()
 df.boxplot(column="MonthlyCharges", by="Churn", ax=axes[0, 2])
 axes[0, 2].set_title("Monthly Charges by Churn")
 axes[0, 2].set_xlabel("Churn (0 = No, 1 = Yes)")
-plt.suptitle("")  # remove automatic suptitle from boxplot
+plt.suptitle("") 
 
 # 3d) Internet Service churn rate
 isc = df.groupby("InternetService")["Churn"].mean().sort_values(ascending=False)
