@@ -64,7 +64,7 @@ def generate_telecom_customers(n=8000):
     monthly_gb = np.random.lognormal(2.5, 0.8, n).clip(0.5, 50)
     monthly_charge = (
         35 + monthly_gb * 1.2 + 
-        np.random.choice([0, 10, 25], n, p=[0.6, 0.3, 0.1]) +  # add-ons
+        np.random.choice([0, 10, 25], n, p=[0.6, 0.3, 0.1]) + 
         np.random.normal(0, 5, n)
     ).clip(25, 150)
     
@@ -319,10 +319,10 @@ print(f"  {'→ Cost of discounts':.<43} ${total_discount_cost:>13,.0f}")
 print(f"  {'→ NET IMPACT':.<43} ${net_impact:>13,.0f}")
 
 if net_impact > 0:
-    print(f"\n💡 RECOMMENDATION: Run the discount campaign")
+    print(f"\n RECOMMENDATION: Run the discount campaign")
     print(f"   We'd save ${net_impact:,.0f} in net revenue")
 else:
-    print(f"\n⚠️  RECOMMENDATION: Skip the discounts")
+    print(f"\n RECOMMENDATION: Skip the discounts")
     print(f"   We'd lose ${abs(net_impact):,.0f} compared to doing nothing")
 
 
