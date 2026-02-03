@@ -59,11 +59,10 @@ Also: **support call volume spikes right before someone churns**. We should be f
 
 If this were going into a real retention system:
 
-1. Use actual customer data with real discount acceptance rates
-2. Add uplift modeling to predict *who responds to discounts* (not everyone does)
-3. Test different discount levels (10%, 15%, 20%) — there's probably a sweet spot
-4. Track how long saved customers actually stick around after the discount ends
-5. Build this into a monthly automated pipeline that flags accounts for the retention team
+1. Add uplift modeling to predict *who responds to discounts* (not everyone does)
+2. Test different discount levels (10%, 15%, 20%) — there's probably a sweet spot
+3. Track how long saved customers actually stick around after the discount ends
+4. Build this into a monthly automated pipeline that flags accounts for the retention team
 
 ---
 
