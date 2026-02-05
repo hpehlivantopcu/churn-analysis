@@ -66,6 +66,3 @@ If this were going into a real retention system:
 
 ---
 
-## Why This Matters for My Portfolio
-
-Most data science projects are just "look I can train a model with 90% accuracy!" This one answers a real business question with a dollar amount attached. That's what analytics is supposed to do.
