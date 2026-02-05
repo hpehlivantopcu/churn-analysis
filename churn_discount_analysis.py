@@ -175,7 +175,7 @@ risk_by_tenure = df[df['churned']==1].groupby(
 axes[1,2].bar(range(len(risk_by_tenure)), risk_by_tenure.values, color='#ff6b6b')
 axes[1,2].set_xticks(range(len(risk_by_tenure)))
 axes[1,2].set_xticklabels(['0-6mo', '6-12mo', '1-2yr', '2yr+'], rotation=15)
-axes[1,2].set_title('Where we're bleeding revenue', fontsize=11)
+axes[1,2].set_title("Where we're bleeding revenue", fontsize=11)
 axes[1,2].set_ylabel('Lost CLV ($k)', color='#e0e0e0')
 
 plt.tight_layout()

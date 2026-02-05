@@ -1,0 +1,3 @@
+scenario,customers_lost,revenue_lost,campaign_cost,net_impact
+Baseline,3327,8106855.0600000005,0.0,0.0
+Discount Campaign,2999,7092492.73,163412.92799999999,850949.4019999999
